@@ -21,7 +21,7 @@ app.get('/items/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const item = items.find(item => item.id === id);
     if (item) {
-        res.status(200).json(item); // Altere esta linha
+        res.status(200).json(item); 
     } else {
         res.status(404).json({ message: "Item não encontrado" });
     }
